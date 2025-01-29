@@ -203,7 +203,7 @@ function sendToWhatsApp() {
   message += `Total: ${total}`;
 
   // WhatsApp message link with your phone number
-  const whatsappNumber = '2207194940'; // Replace with your WhatsApp number
+  const whatsappNumber = '2207709979'; 
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
   
   // Open WhatsApp with the generated message
