@@ -173,7 +173,12 @@ function updateTotal() {
 
 // Whatsapp starts
 // WhatsApp functionality for "Buy Now" button
-const whatsappBtn = document.querySelector('.whatsapp-btn');
+const whatsappBtn = document.querySelectorAll('.whatsapp-btn');
+
+for (let i = 0; i < whatsappBtn.length; i++) {
+  const whatsappbtns = whatsappBtn[i];
+  whatsappbtns.addEventListener('click', sendToWhatsApp);
+}
 
 // Function to generate the message and send to WhatsApp
 function sendToWhatsApp() {
@@ -206,7 +211,7 @@ function sendToWhatsApp() {
 }
 
 // Add event listener for the "Buy Now" button
-whatsappBtn.addEventListener('click', sendToWhatsApp);
+// whatsappBtn.addEventListener('click', sendToWhatsApp);
 
 // Whatsapp ends
 
