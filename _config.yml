@@ -1,2 +1,3 @@
-baseurl: "/hustlestargm"
-url: "https://karamo10.github.io"
+url: 'https://karamo10.github.io' # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: '/hustlestargm' # the subpath of your site, e.g. /blog
+title: 'HustleStars GM' # the name of your site, e.g. ACME Corp.
