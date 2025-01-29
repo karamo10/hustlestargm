@@ -216,7 +216,7 @@ header {
   font-size: 1.3rem;
   font-weight: 500;
 }
-.hero-grid-item_paragraph span{
+.hero-grid-item_paragraph span {
   font-weight: 600;
 }
 /* Hero Section Ends Here */
@@ -362,7 +362,6 @@ header {
   justify-content: space-between;
 }
 
-
 .tracksuit-head--left .title {
   font-size: 1.5rem;
   font-weight: 500;
@@ -421,28 +420,27 @@ header {
   transition: transform 0.2s;
   /* position: relative; */
 }
-.gallery-item{
+.gallery-item {
   position: relative;
 }
-.pricing{
+.pricing {
   position: absolute;
   bottom: 0;
   width: 100%;
   padding: 0 0.5rem;
   padding-right: 1rem;
   opacity: 0;
-  transition: .4s;
+  transition: 0.4s;
 }
-.gallery-item:hover .pricing{
+.gallery-item:hover .pricing {
   opacity: 1;
 }
 
-
-.pricing .product-title{
+.pricing .product-title {
   font-size: 0.9rem;
 }
 
-.pricing .whatsapp-btn{
+.pricing .whatsapp-btn {
   margin-right: 5px;
   /* background: red; */
 }
@@ -452,10 +450,8 @@ header {
   right: 0;
 } */
 
-
 .gallery img:hover {
   transform: scale(1.1);
-
 }
 
 .gallery .gallery-item {
@@ -467,9 +463,6 @@ header {
   padding: 0;
   transition: 0.4s;
 }
-
-
-
 
 /* Hoodie Section */
 .hoodie__section {
@@ -666,11 +659,11 @@ header {
   color: var(--main-color);
 }
 
-.footer-contact a{
+.footer-contact a {
   color: var(--text-color);
 }
 
-.footer-socials i{
+.footer-socials i {
   font-size: 1.7rem;
   color: var(--text-color);
   margin-bottom: 0.5rem;
@@ -735,7 +728,7 @@ header {
   .tracksuit-head {
     padding: 0 0.1rem;
   }
-/* 
+  /* 
   .tracksuit-head {
     flex-direction: column;
     align-items: start;
@@ -800,7 +793,7 @@ header {
     font-size: 1rem;
   }
 
-  .footer-socials{
+  .footer-socials {
     text-align: center;
   }
 
@@ -824,7 +817,6 @@ header {
   .testimonial .occupation {
     font-size: 0.9em;
   }
-
 }
 
 /* Medium Screens */
@@ -856,24 +848,24 @@ header {
   }
 
   /* Tracksuit Section */
-     .tracksuit-head--left .title {
-       font-size: 1rem;
-       letter-spacing: 1px;
-       margin-bottom: 20px;
-     }
-  
-     .button-link {
-       padding: 1rem 2rem;
-     }
-  
-     .button-link a {
-       font-size: 0.95rem;
-     }
-  
-     .inner_grid {
-       grid-row-gap: 10px;
-       grid-column-gap: 10px;
-     }
+  .tracksuit-head--left .title {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+
+  .button-link {
+    padding: 1rem 2rem;
+  }
+
+  .button-link a {
+    font-size: 0.95rem;
+  }
+
+  .inner_grid {
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+  }
 
   /* Footer Section */
   .footer {
