@@ -139,7 +139,7 @@ function updateTotal() {
     const cartBox = cartBoxes[i];
     const priceElement = cartBox.getElementsByClassName('cart-price')[0];
     const quantityElement = cartBox.getElementsByClassName('cart-quantity')[0];
-    const price = parseFloat(priceElement.innerText.replace('$', ''));
+    const price = parseFloat(priceElement.innerText.replace('GMD', ''));
     const quantity = quantityElement.value;
     total += price * quantity;
 
@@ -147,7 +147,7 @@ function updateTotal() {
     total = Math.round(total * 100) / 100;
 
     // Update the displayed total price
-    document.getElementsByClassName('total-price')[0].innerText = '$' + total;
+    document.getElementsByClassName('total-price')[0].innerText = 'GMD' + total;
   }
 }
 
@@ -160,13 +160,13 @@ function updateTotal() {
     const cartBox = cartBoxes[i];
     const priceElement = cartBox.getElementsByClassName('cart-price')[0];
     const quantityElement = cartBox.getElementsByClassName('cart-quantity')[0];
-    const price = parseFloat(priceElement.innerText.replace('$', ''));
+    const price = parseFloat(priceElement.innerText.replace('GMD', ''));
     const quantity = quantityElement.value;
     total = total + price * quantity;
 
     total = Math.round(total * 100) / 100;
 
-    document.getElementsByClassName('total-price')[0].innerText = '$' + total;
+    document.getElementsByClassName('total-price')[0].innerText = 'GMD' + total;
   }
 }
 
@@ -184,7 +184,7 @@ for (let i = 0; i < whatsappBtn.length; i++) {
 function sendToWhatsApp() {
   const cartContents = document.getElementsByClassName('cart-content')[0];
   const cartItems = cartContents.getElementsByClassName('cart-box');
-  let message = 'I want to buy these items:\n\n';
+  let message = 'Hello Hustlestar I want to buy these items:\n\n';
 
   // Loop through the cart items to build the message
   for (let i = 0; i < cartItems.length; i++) {
@@ -203,7 +203,7 @@ function sendToWhatsApp() {
   message += `Total: ${total}`;
 
   // WhatsApp message link with your phone number
-  const whatsappNumber = '2207709979'; 
+  const whatsappNumber = '2207194940'; 
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
   
   // Open WhatsApp with the generated message
