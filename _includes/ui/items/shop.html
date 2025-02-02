@@ -3,7 +3,9 @@
     <!-- Content -->
      <div class="shop-content">
       
-      {% for product in site.data.products %}
+
+      {% assign products = site.data.products | where: "category", "T-Shirt" | where: "visibility", "Yes" %}
+      {% for product in  products %}
          <div class="product-box">
             <img src="/assets/images{{ product.thumbnail }}" alt="" class="product-img">
             <h2 class="product-title">

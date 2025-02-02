@@ -10,79 +10,63 @@
     </div>
   </div>
   <div class="gallery">
+
+    {% assign tracksuit_first = site.data.products | where: "id", 12 | first %}
     <figure class="gallery-item gallery-item--1 product-box">
       <img
-        src="/assets/images/tracksuit1.PNG"
+        src="/assets/images{{ tracksuit_first.thumbnail }}"
         alt="Go grab our tracksuit now"
         class="gallery-img product-img modal-triger product-img"
       />
       <div class="pricing">
-        <span class="price">GMD1800</span>
+        <span class="price">
+          GMD {{ tracksuit_first.price }}
+        </span>
         <h2 class="product-title">Tracksuit</h2>
         <i class="bx bx-shopping-bag add-cart whatsapp-btn">Buy Now</i>
       </div>
     </figure>
+
     <div class="inner_grid">
-      <figure class="gallery-item gallery-item--2">
-        <img
-          src="/assets/images/tracksuit2.PNG"
-          alt="Go grab our tracksuit now"
-          class="gallery-img product-img modal-triger"
-        />
-        <div class="pricing">
-            <!-- <span class="price">$25</span>
-            <h2 class="product-title">Blaze Hoodie</h2> -->
-            <i class="bx bx-shopping-bag add-cart whatsapp-btn">Buy Now</i>
-        </div>
-      </figure>
-      <figure class="gallery-item gallery-item--3">
-        <img
-          src="/assets/images/tracksuit3.PNG"
-          alt="Go grab our tracksuit now"
-          class="gallery-img product-img modal-triger"
-        />
-        <div class="pricing">
-            <!-- <span class="price">$25</span>
-            <h2 class="product-title">Blaze Hoodie</h2> -->
-            <i class="bx bx-shopping-bag add-cart whatsapp-btn">Buy Now</i>
-        </div>
-      </figure>
-      <figure class="gallery-item gallery-item--4">
-        <img
-          src="/assets/images/tracksuit4.PNG"
-          alt="Go grab our tracksuit now"
-          class="gallery-img product-img modal-triger"
-        />
-        <div class="pricing">
-            <!-- <span class="price">$25</span>
-            <h2 class="product-title">Blaze Hoodie</h2> -->
-            <i class="bx bx-shopping-bag add-cart whatsapp-btn">Buy Now</i>
-        </div>
-      </figure>
-      <figure class="gallery-item gallery-item--5">
-        <img
-          src="/assets/images/tracksuit1.PNG"
-          alt="Go grab our tracksuit now"
-          class="gallery-img product-img modal-triger"
-        />
-        <div class="pricing">
-            <!-- <span class="price">$25</span>
-            <h2 class="product-title">Blaze Hoodie</h2> -->
-            <i class="bx bx-shopping-bag add-cart whatsapp-btn">Buy Now</i>
-        </div>
-      </figure>
+
+      {% assign products = site.data.products | where: "category", "TrackSuits" | where: "visibility", "Yes" %}
+      {% for product in  products offset: 1 limit: 4 %}
+        <figure class="gallery-item gallery-item--2">
+          <img
+            src="/assets/images{{ product.thumbnail }}"
+            alt="Go grab our tracksuit now"
+            class="gallery-img product-img modal-triger"
+          />
+          <h2 class="product-title">
+            {{ product.title }}
+          </h2>
+          <span class="price">
+              GMD {{ product.price }}
+          </span>
+          <div class="pricing">
+              <i class="bx bx-shopping-bag add-cart whatsapp-btn">Buy Now</i>
+          </div>
+        </figure>
+      {% endfor %}
+
     </div>
-    <figure class="gallery-item gallery-item--6 product-box">
+
+    {% assign tracksuit_last = site.data.products | where: "id", 17 | first %}
+    <figure class="gallery-item gallery-item--1 product-box">
       <img
-        src="/assets/images/tracksuit4.PNG"
+        src="/assets/images{{ tracksuit_last.thumbnail }}"
         alt="Go grab our tracksuit now"
-        class="gallery-img modal-triger product-img"
+        class="gallery-img product-img modal-triger product-img"
       />
-    <div class="pricing">
-        <span class="price">GMD1800</span>
+      <div class="pricing">
+        <span class="price">
+          GMD {{ tracksuit_last.price }}
+        </span>
         <h2 class="product-title">Tracksuit</h2>
         <i class="bx bx-shopping-bag add-cart whatsapp-btn">Buy Now</i>
-    </div>
+      </div>
     </figure>
+
+
   </div>
 </section>
