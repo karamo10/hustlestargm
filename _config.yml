@@ -1,4 +1,4 @@
 url: 'https://karamo10.github.io' # Base hostname
-baseurl: '/hustlestargm' # Repository name (needed for GitHub Pages)
+baseurl:  # Repository name (needed for GitHub Pages)
 title: 'HustleStars GM' # Site title
 
