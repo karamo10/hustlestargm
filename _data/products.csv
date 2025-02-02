@@ -1,3 +1,24 @@
-id,title,sub_title,description,price,thumbnail
-1,Shine with ambition T-Shirt,,,600,/products/t-shirts/swa-t-shirt.png
-2,Evergreen Hustle T-Shirt,,,500,/products/t-shirts/eg-t-shirt.png
+id,title,description,category,sub_category,price,thumbnail,stock,visibility,notes
+1,Shine with ambition T-Shirt,,T-Shirt,,GMD600.00,/products/t-shirts/swa-t-shirt.png,1,Yes,
+2,Evergreen Hustle T-Shirt,,T-Shirt,,GMD500.00,/products/t-shirts/eg-t-shirt.png,2,,
+3,Shine with ambition T-Shirt,,T-Shirt,,"GMD6,000.00",/products/t-shirts/swa1-t-shirt.png,,,
+4,Midnight Hustle T-Shirt,,T-Shirt,,GMD500.00,/products/t-shirts/mn-t-shirt.png,,,
+5,Midnight Hustle T-Shirt,,T-Shirt,,GMD500.00,/products/t-shirts/mn-black-t-shirt.png,,,
+6,Midnight Hustle T-Shirt,,T-Shirt,,GMD500.00,/products/t-shirts/mn2-t-shirt.png,,,
+7,Midnight Hustle T-Shirt,,T-Shirt,,GMD500.00,/products/t-shirts/mn-black-t-shirt.png,,,
+8,Evergreen Hustle T-Shirt,,T-Shirt,,GMD500.00,/products/t-shirts/eg2-t-shirt.png,,,
+9,Shine with ambition T-Shirt,,New-Drop,,GMD600.00,/products/newdrop-shirts/swa-newdrop-t-shirt1.png,,,
+10,Midnight Hustle T-Shirt,,New-Drop,,GMD500.00,/products/newdrop-shirts/swa-newdrop-t-shirt2.png,,,
+11,Shine with ambition T-Shirt,,New-Drop,,GMD600.00,/products/newdrop-shirts/swa-newdrop-t-shirt3.png,,,
+12,Tracksuit,,TrackSuits,,"GMD1,800.00",/products/tracksuits/tracksuit-red.PNG,,,
+13,Tracksuit,,TrackSuits,,"GMD1,800.00",/products/tracksuits/tracksuit-red-orange.PNG,,,
+14,Tracksuit,,TrackSuits,,"GMD1,800.00",/products/tracksuits/tracksuit-mixed-color.PNG,,,
+15,Tracksuit,,TrackSuits,,"GMD1,800.00",/products/tracksuits/tracksuit-black.PNG,,,
+16,Tracksuit,,TrackSuits,,"GMD1,800.00",/products/tracksuits/tracksuit-red.PNG,,,
+17,Tracksuit,,TrackSuits,,"GMD1,800.00",/products/tracksuits/tracksuit-black.PNG,,,
+18,Blaze Hoodie,,Hooddie,,"GMD1,000.00",/products/hoodies/hoodie-orange-bg.png,,,
+19,Onyx Hoodie,,Hooddie,,"GMD1,000.00",/products/hoodies/hoodie-black.png,,,
+20,Blaze Hoodie,,Hooddie,,"GMD1,000.00",/products/hoodies/hoodie-orange.png,,,
+21,Onyx Hoodie,,Hooddie,,"GMD1,000.00",/products/hoodies/hoodie-black.png,,,
+22,Blaze Hoodie,,Hooddie,,"GMD1,000.00",/products/hoodies/hoodie-orange.png,,,
+23,,,,,,,,,
