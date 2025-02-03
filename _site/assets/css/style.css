@@ -250,7 +250,7 @@ header {
   margin-bottom: 0.5rem;
 }
 .product-title {
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
@@ -418,7 +418,6 @@ header {
   height: 100%;
   cursor: pointer;
   transition: transform 0.2s;
-  /* position: relative; */
 }
 .gallery-item {
   position: relative;
@@ -444,11 +443,6 @@ header {
   margin-right: 5px;
   /* background: red; */
 }
-
-/* .gallery-item .product-title{
-  position: absolute;
-  right: 0;
-} */
 
 .gallery img:hover {
   transform: scale(1.1);
@@ -676,6 +670,29 @@ header {
   padding-top: 1rem;
 }
 
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: visible;
+  z-index: 999;
+}
+.preloader img {
+  width: 50px;
+}
+
+.hide-preloader {
+  visibility: hidden;
+  z-index: -999;
+}
+
 /* Making it Responsive For Mobile and Tablet */
 /* Hero Section */
 @media (max-width: 1080px) {
@@ -824,6 +841,11 @@ header {
   .cart {
     width: 320px;
   }
+
+  .cart-product-title {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
   /* Hero Section */
   .hero {
     height: 100%;
@@ -853,6 +875,11 @@ header {
     letter-spacing: 1px;
     margin-bottom: 20px;
   }
+
+    .tracksuit-head {
+      flex-direction: column;
+      align-items: start;
+    }
 
   .button-link {
     padding: 1rem 2rem;

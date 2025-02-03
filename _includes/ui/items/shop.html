@@ -2,7 +2,7 @@
     <h2 class="section-title shop-title">Shop Products</h2>
     <!-- Content -->
      <div class="shop-content">
-      
+
 
       {% assign products = site.data.products | where: "category", "T-Shirt" | where: "visibility", "Yes" %}
       {% for product in  products %}
@@ -12,11 +12,13 @@
                {{ product.title }}
             </h2>
             <span class="price">
-               GMD {{ product.price }}
+                {{ product.price }}
             </span>
-            <i class='bx bx-shopping-bag add-cart' data-id="shop-product-1"></i>
+            <i class='bx bx-shopping-bag add-cart' data-id="{{ product.id }}"></i>
          </div>
       {% endfor %}
        
      </div>
+    
  </section>
+<div class="preloader"><img src="/assets/images/Parallel planets.gif" alt=""></div>

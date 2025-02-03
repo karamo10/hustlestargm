@@ -1,13 +1,12 @@
 // Automatic Typing
-document.addEventListener("DOMContentLoaded", function() {
-    var typingEffect = new Typed(".multitext", {
-      strings: ["Mission"],
-        typeSpeed: 50,
-        backSpeed: 50,
-        loop: true
-    }
-  )
-})
+document.addEventListener('DOMContentLoaded', function () {
+  var typingEffect = new Typed('.multitext', {
+    strings: ['Mission'],
+    typeSpeed: 50,
+    backSpeed: 50,
+    loop: true,
+  });
+});
 
 // Cart
 const cartIcon = document.querySelector('#cart-icon');
@@ -70,6 +69,12 @@ function quantityChanged(event) {
 window.addEventListener('DOMContentLoaded', (event) => {
   const cartItems = document.getElementsByClassName('cart-content')[0];
   cartItems.innerHTML = '';
+
+  // Preloader
+  const preload = document.querySelector('.preloader');
+  setTimeout(function () {
+    preload.classList.add('hide-preloader');
+  }, 3000);
 });
 
 // Add Cart
@@ -106,6 +111,7 @@ function addProductToCart(title, price, productImg, productId) {
   }
 
   // Create the cart box with the product details
+
   const cartBoxContent = `
                         <img src="${productImg}" alt="" class="cart-img">
                         <div class="detail-box">
@@ -170,7 +176,6 @@ function updateTotal() {
   }
 }
 
-
 // Whatsapp starts
 // WhatsApp functionality for "Buy Now" button
 const whatsappBtn = document.querySelectorAll('.whatsapp-btn');
@@ -189,7 +194,8 @@ function sendToWhatsApp() {
   // Loop through the cart items to build the message
   for (let i = 0; i < cartItems.length; i++) {
     const item = cartItems[i];
-    const title = item.getElementsByClassName('cart-product-title')[0].innerText;
+    const title =
+      item.getElementsByClassName('cart-product-title')[0].innerText;
     const price = item.getElementsByClassName('cart-price')[0].innerText;
     const quantity = item.getElementsByClassName('cart-quantity')[0].value;
     const img = item.getElementsByClassName('cart-img')[0].src;
@@ -203,15 +209,23 @@ function sendToWhatsApp() {
   message += `Total: ${total}`;
 
   // WhatsApp message link with your phone number
-  const whatsappNumber = '2207194940'; 
-  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
-  
+  const whatsappNumber = '2207194940';
+
+  // Detect if the user is on a mobile device
+  const isMobile = /iPhone|Android|iPad/i.test(navigator.userAgent);
+
+  // Choose the correct WhatsApp link
+  const whatsappLink = isMobile
+    ? `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}` // Open in WhatsApp app
+    : `https://web.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(
+        message
+      )}`; // Open in WhatsApp Web
+
+  // const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
   // Open WhatsApp with the generated message
   window.open(whatsappLink, '_blank');
 }
-
-// Add event listener for the "Buy Now" button
-// whatsappBtn.addEventListener('click', sendToWhatsApp);
 
 // Whatsapp ends
 
