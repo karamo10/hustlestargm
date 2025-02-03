@@ -33,7 +33,7 @@
       {% for product in  products offset: 1 limit: 4 %}
         <figure class="gallery-item gallery-item--2">
           <img
-            src="/assets/images{{ product.thumbnail }}"
+            src="/hustlestargm/assets/images{{ product.thumbnail }}"
             alt="Go grab our tracksuit now"
             class="gallery-img product-img modal-triger"
           />
@@ -54,7 +54,7 @@
     {% assign tracksuit_last = site.data.products | where: "id", 17 | first %}
     <figure class="gallery-item gallery-item--1 product-box">
       <img
-        src="/assets/images{{ tracksuit_last.thumbnail }}"
+        src="/hustlestargm/assets/images{{ tracksuit_last.thumbnail }}"
         alt="Go grab our tracksuit now"
         class="gallery-img product-img modal-triger product-img"
       />
