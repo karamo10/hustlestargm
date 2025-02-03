@@ -1,7 +1,7 @@
 // Automatic Typing
 document.addEventListener('DOMContentLoaded', function () {
   var typingEffect = new Typed('.multitext', {
-    strings: ['Mission'],
+    strings: ['Hustlestar'],
     typeSpeed: 50,
     backSpeed: 50,
     loop: true,
@@ -209,7 +209,7 @@ function sendToWhatsApp() {
   message += `Total: ${total}`;
 
   // WhatsApp message link with your phone number
-  const whatsappNumber = '2207194940';
+  const whatsappNumber = '2207709979';
 
   // Detect if the user is on a mobile device
   const isMobile = /iPhone|Android|iPad/i.test(navigator.userAgent);

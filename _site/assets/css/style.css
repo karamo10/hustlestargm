@@ -64,6 +64,11 @@ header {
   color: var(--text-color);
   font-weight: 600;
 }
+
+.logo img{
+  width: 60px;
+  object-fit: cover;
+}
 /* Applyin Text Shadows To The Headings */
 .logo,
 .hero_heading,
@@ -191,6 +196,7 @@ header {
   margin-bottom: 3rem;
 }
 .hero-grid {
+  /* display: none; */
   width: 70%;
   display: grid;
   grid-template-columns: 1fr 330px;
@@ -217,6 +223,7 @@ header {
 .multitext {
   color: var(--main-color);
   text-transform: capitalize;
+  /* display: block; */
 }
 .hero-grid-item_paragraph {
   font-family: 'Raleway', sans-serif;
@@ -236,7 +243,7 @@ header {
   text-transform: capitalize;
 }
 .shop {
-  margin-top: 8rem;
+  margin-top: 6.5rem;
 }
 /* Shop Content */
 .shop-content {
@@ -319,7 +326,7 @@ header {
   position: absolute;
   top: 75px;
   right: 20px;
-  font-size: 2.3rem;
+  font-size: 3.3rem;
   color: #fff;
   cursor: pointer;
 }
@@ -360,7 +367,7 @@ header {
   /* background-color: #dd7171; */
   width: 70%;
   height: auto;
-  margin-top: 3rem;
+  margin-top: 8rem;
 }
 
 .tracksuit-head {
@@ -861,6 +868,12 @@ header {
   .hero_heading {
     width: 70%;
   }
+
+  /* Modal closing */
+    .close {
+      right: 20px;
+      font-size: 2.8rem;
+    }
 
   /* New Drop Section*/
   .new-drop {
