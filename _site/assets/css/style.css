@@ -856,6 +856,11 @@ header {
     width: 320px;
   }
 
+
+  .logo img{
+    width: 45px;
+  }
+
   .cart-product-title {
     font-size: 0.8rem;
     text-transform: uppercase;
