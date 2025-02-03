@@ -1,7 +1,7 @@
 id,title,description,category,sub_category,price,thumbnail,stock,visibility,notes
 1,Shine with ambition T-Shirt,,T-Shirt,,GMD 600.00,/products/t-shirts/swa-t-shirt.png,1,Yes,
-2,Evergreen Hustle T-Shirt,,T-Shirt,,GMD 500.00,/products/t-shirts/eg-t-shirt.png,1,Yes,
-3,Shine with ambition T-Shirt,,T-Shirt,,"GMD 6000.00",/products/t-shirts/swa1-t-shirt.png,1,Yes,
+2,Evergreen Hustle T-Shirt,,T-Shirt,,GMD500.00,/products/t-shirts/eg-t-shirt.png,1,Yes,
+3,Shine with ambition T-Shirt,,T-Shirt,,"GMD600.00",/products/t-shirts/swa1-t-shirt.png,1,Yes,
 4,Midnight Hustle T-Shirt,,T-Shirt,,GMD500.00,/products/t-shirts/mn-t-shirt.png,1,Yes,
 5,Midnight Hustle T-Shirt,,T-Shirt,,GMD500.00,/products/t-shirts/mn-black-t-shirt.png,1,Yes,
 6,Midnight Hustle T-Shirt,,T-Shirt,,GMD500.00,/products/t-shirts/mn2-t-shirt.png,1,Yes,
@@ -22,3 +22,4 @@ id,title,description,category,sub_category,price,thumbnail,stock,visibility,note
 21,Onyx Hoodie,,Hooddie,,"GMD1000.00",/products/hoodies/hoodie-black.png,1,Yes,
 22,Blaze Hoodie,,Hooddie,,"GMD1000.00",/products/hoodies/hoodie-orange.png,1,Yes,
 23,Onyx Hoodie,,Hooddie,,"GMD1000.00",/products/hoodies/hoodie-black.png,1,Yes,
+            
