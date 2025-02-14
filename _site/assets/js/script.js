@@ -277,3 +277,28 @@ function showNextTestimonials() {
   nextTestimonial.classList.add('actives');
 }
 setInterval(showNextTestimonials, 10000);
+
+// Hero img
+// const heroImg = [
+//   '/assets/images/hero0.png',
+//   '/assets/images/hero2.png',
+//   '/assets/images/hero3.png',
+// ];
+
+// let heroCurrentImg = 0;
+// const hero = document.getElementsByClassName("hero");
+// console.log(hero);
+
+// function changeHeroImg() {
+  
+//   hero.style.backgroundImage = `
+//   linear-gradient(rgba(44, 44, 44, 0.882),
+//         rgba(27, 27, 27, 0.808)),
+//       url('${heroImg[heroCurrentImg]}');
+//   `
+//   heroCurrentImg = (heroCurrentImg + 1) % heroImg.length;
+// }
+
+// setInterval(changeHeroImg, 2000);
+
+// changeHeroImg();

@@ -176,27 +176,42 @@ header {
 }
 /* Hero Section Starts Here*/
 .hero {
-  background-image: linear-gradient(
+  background-image: linear-gradient(rgba(44, 44, 44, 0.882),
+        rgba(27, 27, 27, 0.808)),
+      url(/assets/images/hero0.png);
+  /* background-image: linear-gradient(
       rgba(255, 255, 255, 0.882),
       rgba(255, 255, 255, 0.808)
     ),
-    url(/assets/images/heroimage.jpg);
-  background-size: cover;
-  height: 550px;
+    url(/assets/images/hero1.jpg); */
+    /* background-image: linear-gradient(rgba(54, 54, 54, 0.882),
+          rgba(52, 52, 52, 0.808)),
+        url(/assets/images/hero0.png); */
+  background-size: 100% 450px;
+  /* object-fit: cover; */
+  /* height: 550px; */
+  height: 575px;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  /* flex-direction: column; */
   line-height: 1.6;
+  position: relative;
 }
+
 .hero_heading {
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
+  font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
+  color: var(--bg-color);
 }
-.hero-grid {
-  /* display: none; */
+
+/* .hero-grid {
   width: 70%;
   display: grid;
   grid-template-columns: 1fr 330px;
@@ -223,7 +238,6 @@ header {
 .multitext {
   color: var(--main-color);
   text-transform: capitalize;
-  /* display: block; */
 }
 .hero-grid-item_paragraph {
   font-family: 'Raleway', sans-serif;
@@ -232,7 +246,8 @@ header {
 }
 .hero-grid-item_paragraph span {
   font-weight: 600;
-}
+} */
+ 
 /* Hero Section Ends Here */
 /* Section Shop Product*/
 .section-title {
@@ -852,6 +867,7 @@ header {
 
 /* Medium Screens */
 @media (max-width: 480px) {
+  
   .cart {
     width: 320px;
   }

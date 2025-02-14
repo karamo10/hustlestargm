@@ -14,17 +14,19 @@
     {% assign tracksuit_first = site.data.products | where: "id", 12 | first %}
     <figure class="gallery-item gallery-item--1 product-box">
       <img
-        src="/hustlestargm/assets/images{{ tracksuit_first.thumbnail }}"
-        alt="Go grab our tracksuit now"
-        class="gallery-img product-img modal-triger product-img"
+        src="/assets/images{{ tracksuit_first.thumbnail }}"
+        alt="Get Your New Tracksuit Now!"
+        class="gallery-img product-img modal-triger"
       />
       <div class="pricing">
         <span class="price">
           {{ tracksuit_first.price }}
         </span>
         <h2 class="product-title">Tracksuit</h2>
-        <i class="bx bx-shopping-bag add-cart whatsapp-btn">Buy Now</i>
+        <!-- <i class="bx bx-shopping-bag add-cart whatsapp-btn">Buy Now</i> -->
+        <!-- <i class='bx bx-shopping-bag add-cart' data-id="{{ product.id }}"></i> -->
       </div>
+        <i class='bx bx-shopping-bag add-cart' data-id="{{ product.id }}"></i>
     </figure>
 
     <div class="inner_grid">
@@ -33,19 +35,20 @@
       {% for product in  products offset: 1 limit: 4 %}
         <figure class="gallery-item gallery-item--2">
           <img
-            src="/hustlestargm/assets/images{{ product.thumbnail }}"
-            alt="Go grab our tracksuit now"
+            src="/assets/images{{ product.thumbnail }}"
+            alt="Get Your New Tracksuit Now!"
             class="gallery-img product-img modal-triger"
           />
           <h2 class="product-title">
             {{ product.title }}
           </h2>
-          <span class="price">
+          <!-- <span class="price">
               GMD {{ product.price }}
+          </span> -->
+          <span class="price">
+            {{ tracksuit_first.price }}
           </span>
-          <div class="pricing">
-              <i class="bx bx-shopping-bag add-cart whatsapp-btn">Buy Now</i>
-          </div>
+        <i class='bx bx-shopping-bag add-cart' data-id="{{ product.id }}"></i>
         </figure>
       {% endfor %}
 
@@ -54,8 +57,8 @@
     {% assign tracksuit_last = site.data.products | where: "id", 17 | first %}
     <figure class="gallery-item gallery-item--1 product-box">
       <img
-        src="/hustlestargm/assets/images{{ tracksuit_last.thumbnail }}"
-        alt="Go grab our tracksuit now"
+        src="/assets/images{{ tracksuit_last.thumbnail }}"
+        alt="Get Your New Tracksuit Now!"
         class="gallery-img product-img modal-triger product-img"
       />
       <div class="pricing">
@@ -63,8 +66,8 @@
          {{ tracksuit_last.price }}
         </span>
         <h2 class="product-title">Tracksuit</h2>
-        <i class="bx bx-shopping-bag add-cart whatsapp-btn">Buy Now</i>
       </div>
+        <i class='bx bx-shopping-bag add-cart' data-id="{{ product.id }}"></i>
     </figure>
 
 

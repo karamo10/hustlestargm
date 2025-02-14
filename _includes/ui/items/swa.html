@@ -1,0 +1,31 @@
+<section class="swa-section container">
+  <h1 class="section-title">Shine With Ambition</h1>
+  <div class="drop-container">
+
+    {% assign products = site.data.products | where: "category", "Swa-Collection" | where: "visibility", "Yes" %}
+    {% for product in products %}
+    <div class="product-box">
+      <img
+        src="/assets/images{{ product.thumbnail }}"
+        alt="Shine With Ambition T-Shirt"
+        class="product-img modal-triger"
+      />
+      <h2 class="product-title">
+        {{ product.title }}
+      </h2>
+      <span class="price">
+        {{ product.price }}
+      </span>
+      <i class="bx bx-shopping-bag add-cart" data-id="{{ product.id }}"></i>
+    </div>
+
+    {% endfor %}
+
+    <!-- <div class="product-box">
+        <img src="/assets/images/short-black1 (3).png" alt="Grab your new drop now!" class="product-img modal-triger" />
+        <h2 class="product-title">Midnight Hustle tee</h2>
+        <span class="price">GMD500</span>
+        <i class="bx bx-shopping-bag add-cart" data-id="newdrop-3"></i>
+    </div> -->
+  </div>
+</section>
