@@ -1,12 +1,12 @@
 // Automatic Typing
-document.addEventListener('DOMContentLoaded', function () {
-  var typingEffect = new Typed('.multitext', {
-    strings: ['Hustlestar'],
-    typeSpeed: 50,
-    backSpeed: 50,
-    loop: true,
-  });
-});
+// document.addEventListener('DOMContentLoaded', function () {
+//   var typingEffect = new Typed('.multitext', {
+//     strings: ['Hustlestar'],
+//     typeSpeed: 50,
+//     backSpeed: 50,
+//     loop: true,
+//   });
+// });
 
 // Cart
 const cartIcon = document.querySelector('#cart-icon');

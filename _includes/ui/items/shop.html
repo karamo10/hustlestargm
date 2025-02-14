@@ -7,7 +7,7 @@
       {% assign products = site.data.products | where: "category", "T-Shirt" | where: "visibility", "Yes" %}
       {% for product in  products %}
          <div class="product-box">
-            <img src="/assets/images{{ product.thumbnail }}" alt="" class="product-img">
+            <img src="/hustlestargm/assets/images{{ product.thumbnail }}" alt="" class="product-img">
             <h2 class="product-title">
                {{ product.title }}
             </h2>
@@ -19,5 +19,5 @@
       {% endfor %}
        
      </div>
-<!-- <div class="preloader"><img src="/assets/images/Parallel planets.gif" alt=""></div> -->
+<div class="preloader"><img src="/assets/images/Parallel planets.gif" alt=""></div>
  </section>

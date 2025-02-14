@@ -460,7 +460,16 @@ header {
   opacity: 0;
   transition: 0.4s;
 }
-.gallery-item:hover .pricing {
+.gallery-item:hover .pricing{
+  opacity: 1;
+}
+
+.gallery-item .add-cart{
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.gallery-item:hover .add-cart{
   opacity: 1;
 }
 
@@ -698,7 +707,7 @@ header {
   border-top: 1px solid #888888;
   padding-top: 1rem;
 }
-/* 
+
 .preloader {
   position: fixed;
   top: 0;
@@ -720,7 +729,7 @@ header {
 .hide-preloader {
   visibility: hidden;
   z-index: -999;
-} */
+}
 
 /* Making it Responsive For Mobile and Tablet */
 /* Hero Section */
