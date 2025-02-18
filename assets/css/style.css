@@ -24,12 +24,16 @@ img {
 }
 body {
   color: var(--text-color);
-  animation: fadeIn .5s;
+  animation: fadeIn 0.5s;
 }
 
-@keyframes fadeIn{
-  0%{ opacity: 0;}
-  100%{opacity: 1;}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* All The Containers */
@@ -37,11 +41,9 @@ body {
   max-width: 1068px;
   margin: auto;
   width: 100%;
-  /* background-color: #764567; */
 }
 section {
   padding: 4rem 0 3rem;
-  /* background-color: var(--main-color); */
 }
 header {
   position: fixed;
@@ -59,13 +61,13 @@ header {
   justify-content: space-between;
   padding: 20px 0;
 }
-.logo {
+/* .logo {
   font-size: 1.3rem;
   color: var(--text-color);
   font-weight: 600;
-}
+} */
 
-.logo img{
+.logo img {
   width: 60px;
   object-fit: cover;
 }
@@ -176,78 +178,37 @@ header {
 }
 /* Hero Section Starts Here*/
 .hero {
-  background-image: linear-gradient(rgba(44, 44, 44, 0.882),
-        rgba(27, 27, 27, 0.808)),
-      url(/assets/images/hero0.png);
+  background-image: linear-gradient(
+      rgba(51, 51, 51, 0.72),
+      rgba(27, 27, 27, 0.768)
+    ),
+    url(/hustlestargm/assets/images/hero0.png);
   /* background-image: linear-gradient(
       rgba(255, 255, 255, 0.882),
       rgba(255, 255, 255, 0.808)
     ),
     url(/assets/images/hero1.jpg); */
-    /* background-image: linear-gradient(rgba(54, 54, 54, 0.882),
+  /* background-image: linear-gradient(rgba(54, 54, 54, 0.882),
           rgba(52, 52, 52, 0.808)),
         url(/assets/images/hero0.png); */
   background-size: 100% 450px;
-  /* object-fit: cover; */
   /* height: 550px; */
   height: 575px;
   background-position: center;
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
   display: flex;
   align-items: center;
   justify-content: center;
-  /* flex-direction: column; */
   line-height: 1.6;
   position: relative;
 }
 
 .hero_heading {
-  /* font-size: 1.2rem; */
   font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
-  /* margin-bottom: 3rem; */
   color: var(--bg-color);
 }
-
-/* .hero-grid {
-  width: 70%;
-  display: grid;
-  grid-template-columns: 1fr 330px;
-  background: var(--bg-color);
-  margin-bottom: -250px;
-  border-radius: 12px;
-  padding: 10px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
-    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
-}
-.hero-grid-item:nth-child(1) {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.topline {
-  font-size: 0.7rem;
-  font-weight: 500;
-}
-.head-multitext {
-  display: block;
-  margin-bottom: 1rem;
-}
-.multitext {
-  color: var(--main-color);
-  text-transform: capitalize;
-}
-.hero-grid-item_paragraph {
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.3rem;
-  font-weight: 500;
-}
-.hero-grid-item_paragraph span {
-  font-weight: 600;
-} */
- 
 /* Hero Section Ends Here */
 /* Section Shop Product*/
 .section-title {
@@ -302,7 +263,6 @@ header {
 /* New Drop Section */
 .new-drop {
   margin-top: 3rem;
-  /* background: var(--main-color); */
 }
 .drop-container {
   display: grid;
@@ -315,7 +275,6 @@ header {
 
 .drop-container .product-box {
   max-width: 300px;
-  /* background: var(--main-color); */
 }
 .drop-container .product-box:hover {
   padding: 5px;
@@ -379,7 +338,6 @@ header {
 
 /* Tracksuit Section */
 .tracksuit {
-  /* background-color: #dd7171; */
   width: 70%;
   height: auto;
   margin-top: 8rem;
@@ -460,17 +418,13 @@ header {
   opacity: 0;
   transition: 0.4s;
 }
-.gallery-item:hover .pricing{
+.gallery-item:hover .pricing {
   opacity: 1;
 }
 
-.gallery-item .add-cart{
-  opacity: 0;
-  transition: 0.4s;
-}
-
-.gallery-item:hover .add-cart{
-  opacity: 1;
+.gallery-item .add-cart {
+  background-color: transparent;
+  color: var(--text-color);
 }
 
 .pricing .product-title {
@@ -479,7 +433,6 @@ header {
 
 .pricing .whatsapp-btn {
   margin-right: 5px;
-  /* background: red; */
 }
 
 .gallery img:hover {
@@ -876,13 +829,11 @@ header {
 
 /* Medium Screens */
 @media (max-width: 480px) {
-  
   .cart {
     width: 320px;
   }
 
-
-  .logo img{
+  .logo img {
     width: 45px;
   }
 
@@ -900,10 +851,10 @@ header {
   }
 
   /* Modal closing */
-    .close {
-      right: 20px;
-      font-size: 2.8rem;
-    }
+  .close {
+    right: 20px;
+    font-size: 2.8rem;
+  }
 
   /* New Drop Section*/
   .new-drop {
@@ -926,13 +877,13 @@ header {
     margin-bottom: 20px;
   }
 
-    .tracksuit-head {
-      flex-direction: column;
-      align-items: start;
-    }
+  .tracksuit-head {
+    flex-direction: column;
+    align-items: start;
+  }
 
   .button-link {
-    padding: 1rem 2rem;
+    display: none;
   }
 
   .button-link a {
