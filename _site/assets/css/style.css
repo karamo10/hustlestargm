@@ -176,6 +176,16 @@ header {
   color: var(--text-color);
   cursor: pointer;
 }
+.top{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.top #cart-count{
+  color: var(--main-color);
+  font-weight: 600;
+}
 /* Hero Section Starts Here*/
 .hero {
   background-image: linear-gradient(

@@ -55,6 +55,8 @@ function removeCartItem(event) {
   const button = event.target;
   button.parentElement.remove();
   updateTotal();
+   cartItemsCount--;
+ cartCount.innerText = cartItemsCount;
 }
 
 // Quantity Changes
@@ -74,8 +76,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
   const preload = document.querySelector('.preloader');
   setTimeout(function () {
     preload.classList.add('hide-preloader');
-  }, 3000);
+  }, 1000);
 });
+
+// UPdates Count Numbers
+const cartCount = document.getElementById('cart-count');
+let cartItemsCount = 0;
 
 // Add Cart
 function addCartCLicked(event) {
@@ -92,6 +98,10 @@ function addCartCLicked(event) {
 
   addProductToCart(title, price, productImg, productId); // Pass the data-id as an argument
   updateTotal();
+
+  // wwwwwwwwwwwwwwwwwwwwwwwwwwwwww
+  cartItemsCount++;
+ cartCount.innerText = cartItemsCount;
 }
 
 function addProductToCart(title, price, productImg, productId) {
@@ -107,7 +117,9 @@ function addProductToCart(title, price, productImg, productId) {
     if (existingProductId === productId) {
       alert('You have already added this item to the cart');
       return; // Prevent adding the item if it's already in the cart
+      
     }
+  
   }
 
   // Create the cart box with the product details
@@ -132,6 +144,9 @@ function addProductToCart(title, price, productImg, productId) {
   cartShopBox
     .getElementsByClassName('cart-quantity')[0]
     .addEventListener('change', quantityChanged);
+  // Increment
+//  cartItemsCount++;
+//  cartCount.innerText = cartItemsCount;
 }
 
 // Update Total
