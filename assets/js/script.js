@@ -66,7 +66,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
   const preload = document.querySelector('.preloader');
   setTimeout(function () {
     preload.classList.add('hide-preloader');
-  }, 1000);
+  }, 3000);
 });
 
 // UPdates Count Numbers

@@ -194,7 +194,7 @@ header {
       rgba(51, 51, 51, 0.72),
       rgba(27, 27, 27, 0.768)
     ),
-    url(/assets/images/hero0.png);
+    url(/hustlestargm/assets/images/hero0.png);
   background-size: 100% 450px;
   /* height: 550px; */
   height: 575px;
@@ -825,6 +825,10 @@ header {
 @media (max-width: 480px) {
   .cart {
     width: 320px;
+  }
+
+  .cart-title{
+      font-size: 1.3rem;
   }
 
   .logo img {

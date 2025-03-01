@@ -14,7 +14,7 @@
     {% assign tracksuit_first = site.data.products | where: "id", 12 | first %}
     <figure class="gallery-item gallery-item--1 product-box">
       <img
-        src="/assets/images{{ tracksuit_first.thumbnail }}"
+        src="/hustlestargm/assets/images{{ tracksuit_first.thumbnail }}"
         alt="Get Your New Tracksuit Now!"
         class="gallery-img product-img modal-triger"
       />
@@ -33,7 +33,7 @@
       {% for product in  products offset: 1 limit: 4 %}
         <figure class="gallery-item gallery-item--2">
           <img
-            src="/assets/images{{ product.thumbnail }}"
+            src="/hustlestargm/assets/images{{ product.thumbnail }}"
             alt="Get Your New Tracksuit Now!"
             class="gallery-img product-img modal-triger"
           />
@@ -55,7 +55,7 @@
     {% assign tracksuit_last = site.data.products | where: "id", 17 | first %}
     <figure class="gallery-item gallery-item--1 product-box">
       <img
-        src="/assets/images{{ tracksuit_last.thumbnail }}"
+        src="/hustlestargm/assets/images{{ tracksuit_last.thumbnail }}"
         alt="Get Your New Tracksuit Now!"
         class="gallery-img product-img modal-triger product-img"
       />
