@@ -185,7 +185,6 @@ header {
   color: var(--main-color);
   font-weight: 600;
   top: -15px;
-  /* font-size: 0.85rem; */
   position: absolute;
   bottom: 0;
 }
@@ -195,15 +194,7 @@ header {
       rgba(51, 51, 51, 0.72),
       rgba(27, 27, 27, 0.768)
     ),
-    url(/hustlestargm/assets/images/hero0.png);
-  /* background-image: linear-gradient(
-      rgba(255, 255, 255, 0.882),
-      rgba(255, 255, 255, 0.808)
-    ),
-    url(/assets/images/hero1.jpg); */
-  /* background-image: linear-gradient(rgba(54, 54, 54, 0.882),
-          rgba(52, 52, 52, 0.808)),
-        url(/assets/images/hero0.png); */
+    url(/assets/images/hero0.png);
   background-size: 100% 450px;
   /* height: 550px; */
   height: 575px;
@@ -492,22 +483,18 @@ header {
 @keyframes slide {
   0% {
     transform: translateX(0);
-    /* Start at the first image */
   }
 
   50% {
     transform: translateX(-33.33%);
-    /* Move to the second image */
   }
 
   100% {
     transform: translateX(-66.66%);
-    /* End at the last image */
   }
 }
 
 .hoodie__container-item {
-  /* display: flex; */
   grid-template-columns: none;
   margin: 0 10px;
 }
@@ -701,11 +688,10 @@ header {
 /* Hero Section */
 @media (max-width: 1080px) {
   section {
-    padding: 3rem 0 2rem; /* Adding Padding Top3rem Left & Right:0 Bottom:0 tO All The Sections*/
-    /* background: plum; */
+    padding: 3rem 0 2rem; 
   }
   .container {
-    margin: 0 auto; /*Container margin-Top-Bottom:0 Left & Right to 0*/
+    margin: 0 auto; 
     width: 90%;
   }
 }
@@ -727,7 +713,7 @@ header {
   .hero-grid {
     width: 95%;
     grid-template-columns: repeat(1, 1fr);
-    margin-bottom: 0; /* It May B Use*/
+    margin-bottom: 0;
     padding: 40px 10px;
   }
   .hero-grid-item:nth-child(2) {
@@ -749,11 +735,6 @@ header {
   .tracksuit-head {
     padding: 0 0.1rem;
   }
-  /* 
-  .tracksuit-head {
-    flex-direction: column;
-    align-items: start;
-  } */
 
   .tracksuit-head--left .title {
     font-size: 1.2rem;

@@ -1,13 +1,3 @@
-// Automatic Typing
-// document.addEventListener('DOMContentLoaded', function () {
-//   var typingEffect = new Typed('.multitext', {
-//     strings: ['Hustlestar'],
-//     typeSpeed: 50,
-//     backSpeed: 50,
-//     loop: true,
-//   });
-// });
-
 // Cart
 const cartIcon = document.querySelector('#cart-icon');
 const cart = document.querySelector('.cart');
@@ -99,7 +89,7 @@ function addCartCLicked(event) {
   addProductToCart(title, price, productImg, productId); // Pass the data-id as an argument
   updateTotal();
 
-  // wwwwwwwwwwwwwwwwwwwwwwwwwwwwww
+  // cart increment
   cartItemsCount++;
  cartCount.innerText = cartItemsCount;
 }
@@ -116,14 +106,13 @@ function addProductToCart(title, price, productImg, productId) {
     const existingProductId = cartItemsIds[i].getAttribute('data-id');
     if (existingProductId === productId) {
       alert('You have already added this item to the cart');
-      return; // Prevent adding the item if it's already in the cart
+      return; 
       
     }
   
   }
 
-  // Create the cart box with the product details
-
+  // Creating the cart box with the product details
   const cartBoxContent = `
                         <img src="${productImg}" alt="" class="cart-img">
                         <div class="detail-box">
@@ -144,33 +133,8 @@ function addProductToCart(title, price, productImg, productId) {
   cartShopBox
     .getElementsByClassName('cart-quantity')[0]
     .addEventListener('change', quantityChanged);
-  // Increment
-//  cartItemsCount++;
-//  cartCount.innerText = cartItemsCount;
 }
 
-// Update Total
-function updateTotal() {
-  const cartContents = document.getElementsByClassName('cart-content')[0];
-  const cartBoxes = cartContents.getElementsByClassName('cart-box');
-  let total = 0;
-
-  // Loop through each cart item to calculate the total price
-  for (let i = 0; i < cartBoxes.length; i++) {
-    const cartBox = cartBoxes[i];
-    const priceElement = cartBox.getElementsByClassName('cart-price')[0];
-    const quantityElement = cartBox.getElementsByClassName('cart-quantity')[0];
-    const price = parseFloat(priceElement.innerText.replace('GMD', ''));
-    const quantity = quantityElement.value;
-    total += price * quantity;
-
-    // Round the total to 2 decimal places
-    total = Math.round(total * 100) / 100;
-
-    // Update the displayed total price
-    document.getElementsByClassName('total-price')[0].innerText = 'GMD' + total;
-  }
-}
 
 // Update Total
 function updateTotal() {
@@ -191,7 +155,7 @@ function updateTotal() {
   }
 }
 
-// Whatsapp starts
+
 // WhatsApp functionality for "Buy Now" button
 const whatsappBtn = document.querySelectorAll('.whatsapp-btn');
 
@@ -204,7 +168,14 @@ for (let i = 0; i < whatsappBtn.length; i++) {
 function sendToWhatsApp() {
   const cartContents = document.getElementsByClassName('cart-content')[0];
   const cartItems = cartContents.getElementsByClassName('cart-box');
+
+  if (cartItems.length === 0) {
+    alert('Nothing on cart!');
+    return;
+  }
+  
   let message = 'Hello Hustlestar I want to buy these items:\n\n';
+ 
 
   // Loop through the cart items to build the message
   for (let i = 0; i < cartItems.length; i++) {
@@ -217,6 +188,7 @@ function sendToWhatsApp() {
 
     // Add product info to message
     message += `Product: ${title}\nPrice: ${price}\nQuantity: ${quantity}\nImage: ${img}\n\n`;
+
   }
 
   // Add total price to the message
@@ -229,20 +201,20 @@ function sendToWhatsApp() {
   // Detect if the user is on a mobile device
   const isMobile = /iPhone|Android|iPad/i.test(navigator.userAgent);
 
-  // Choose the correct WhatsApp link
+  
   const whatsappLink = isMobile
-    ? `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}` // Open in WhatsApp app
+    ? `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}` 
     : `https://web.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(
         message
-      )}`; // Open in WhatsApp Web
+      )}`; 
 
-  // const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
   // Open WhatsApp with the generated message
   window.open(whatsappLink, '_blank');
+
+  
 }
 
-// Whatsapp ends
 
 // Modal Displaying
 const modal = document.getElementById('myModal');
@@ -265,7 +237,7 @@ closeModal.onclick = function () {
   modal.style.display = 'none';
 };
 
-// Testimonial Section
+
 // testimonials slides
 let index = 0;
 
@@ -293,27 +265,3 @@ function showNextTestimonials() {
 }
 setInterval(showNextTestimonials, 10000);
 
-// Hero img
-// const heroImg = [
-//   '/assets/images/hero0.png',
-//   '/assets/images/hero2.png',
-//   '/assets/images/hero3.png',
-// ];
-
-// let heroCurrentImg = 0;
-// const hero = document.getElementsByClassName("hero");
-// console.log(hero);
-
-// function changeHeroImg() {
-  
-//   hero.style.backgroundImage = `
-//   linear-gradient(rgba(44, 44, 44, 0.882),
-//         rgba(27, 27, 27, 0.808)),
-//       url('${heroImg[heroCurrentImg]}');
-//   `
-//   heroCurrentImg = (heroCurrentImg + 1) % heroImg.length;
-// }
-
-// setInterval(changeHeroImg, 2000);
-
-// changeHeroImg();

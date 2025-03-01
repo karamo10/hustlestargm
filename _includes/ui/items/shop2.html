@@ -7,7 +7,7 @@
         {% assign products = site.data.products | where: "category", "Hustle-Collection" | where: "visibility", "Yes" %}
         {% for product in products %}
      <div class="product-box drop-box">
-         <img src="/hustlestargm/assets/images{{ product.thumbnail }}" alt="Grab Your New Hustle T-Shirt Now!" class="product-img modal-triger">
+         <img src="/assets/images{{ product.thumbnail }}" alt="Grab Your New Hustle T-Shirt Now!" class="product-img modal-triger">
          <h2 class="product-title">
             {{ product.title }}
          </h2>
